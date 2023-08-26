@@ -6,4 +6,4 @@
 
 [Advanced Use]()
 
-[How To Report Issues]()
+[How To Report Issues](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/How-To-Report-Issues)
