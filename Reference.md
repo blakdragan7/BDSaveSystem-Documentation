@@ -17,6 +17,7 @@ Writes out save to disk.
 * *const FScopedSaveGame&* **Save** - The save game to write to disk
 #### Outputs
 * *bool* - Returns true when succesful or false otherwise
+
 [[/images/LoadSaveFromSlot.png|Load Save from Slot Image]]
 ### Flush Save
 [[/images/FlushSave.png|Flush Save Image]]
@@ -30,6 +31,7 @@ The deletes the save slot from disk with given slot name
 * *FString&* **Slot** - The slot name to delete
 #### Outputs
 * *bool* - Returns true when succesful or false otherwise
+
 [[/images/RemoveSaveSlot.png|Remove Save Slot Image]]
 ## Witing / Getting Data
 ### Write Actor
