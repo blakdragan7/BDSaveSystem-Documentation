@@ -12,18 +12,19 @@ Creates in memory or loads to memory a save game for slot name.
 [[/images/StartSaveToSlot.png|Start Save to Slot Image]]
 ### Load Save from Slot
 #### Description
+#### Inputs
+#### Outputs
+
+[[/images/LoadSaveFromSlot.png|Load Save from Slot Image]]
+### Flush Save
+#### Description
 Writes out save to disk.
 #### Inputs
 * *const FScopedSaveGame&* **Save** - The save game to write to disk
 #### Outputs
 * *bool* - Returns true when succesful or false otherwise
 
-[[/images/LoadSaveFromSlot.png|Load Save from Slot Image]]
-### Flush Save
 [[/images/FlushSave.png|Flush Save Image]]
-#### Description
-#### Inputs
-#### Outputs
 ### Remove Save Slot
 #### Description
 The deletes the save slot from disk with given slot name
