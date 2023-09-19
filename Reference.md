@@ -1,4 +1,4 @@
-## Start and Loads Saves
+## Start and Load Saves
 ### Start Save to Slot
 #### Description
 Creates in memory or loads to memory a save game for slot name. 
