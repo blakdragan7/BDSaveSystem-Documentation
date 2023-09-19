@@ -38,7 +38,7 @@ The deletes the save slot from disk with given slot name
 * *bool* **Return Value** - Returns true when succesful or false otherwise
 
 [[/images/RemoveSaveSlot.png|Remove Save Slot Image]]
-## Witing / Getting Data
+## Writing / Getting Data
 ### Write Actor
 #### Description
 Addes given actors save data to the save game in memory
