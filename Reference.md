@@ -24,7 +24,7 @@ Load a given save into memory
 #### Description
 Writes out save to disk.
 #### Inputs
-* *FScopedSaveGame&* **Save** - The save game to write to disk
+* *FScopedSaveGame* **Save** - The save game to write to disk
 #### Outputs
 * *bool* **Return Value** - Returns true when succesful or false otherwise
 
