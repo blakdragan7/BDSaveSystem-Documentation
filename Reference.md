@@ -86,4 +86,5 @@ Checks if given save game is valid
 * *FScopedSaveGame* **Save Game**
 #### Outputs
 * *bool* **Return Value** - whether or not the save game is valid
+
 [[/images/IsValid.png|Is Valid Image]]
