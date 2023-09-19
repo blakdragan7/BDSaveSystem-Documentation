@@ -8,6 +8,7 @@ This will create a save game in memory or load to memory for given slot name.
 * *bool* **Attempt Load** - Whether or not to  attempt to load a save game for specified slot, if one is found. If not, it will be created in memory. 
 #### Outputs
 * *FScopedSaveGame* **OutSave** - The created or loaded save game. 
+* *bool* **Return Value** - True if save was loaded or created successfully, false otherwise
 
 [[/images/StartSaveToSlot.png|Start Save to Slot Image]]
 ### Load Save from Slot
