@@ -1,6 +1,6 @@
 [Plugin Description](https://github.com/blakdragan7/BDSaveSystem-Documentation/wiki/Dynamic-Scene-Component-%E2%80%90-Save-&-Load)
 
-[Reference](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/Reference)
+[Function API Reference](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/Function-API-Reference)
 
 [Basic Use](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/Basic-Use)
 
