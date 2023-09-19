@@ -21,7 +21,7 @@ Load a given save into memory.
 * *bool* **Return Value** - True if save was found and loaded, false otherwise
 
 [[/images/LoadSaveFromSlot.png|Load Save from Slot Image]]
-### ""Flush Save" Blueprint function
+### "Flush Save" Blueprint function
 #### Description
 Writes out save to disk.
 #### Inputs
