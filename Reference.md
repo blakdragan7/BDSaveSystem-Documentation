@@ -4,8 +4,8 @@
 Creates in memory or loads to memory a save game for slot name. 
 
 #### Inputs
-* *FString&* **Slot** - The name of the slot to create a save for
-* *constant bool* **Attempt Load** - Wether or not to load a save game for given slot if one is found
+* *FString* **Slot** - The name of the slot to create a save for
+* *bool* **Attempt Load** - Wether or not to load a save game for given slot if one is found
 #### Outputs
 * *FScopedSaveGane* **OutSave** - The created or loaded save game 
 
@@ -24,7 +24,7 @@ Load a given save into memory
 #### Description
 Writes out save to disk.
 #### Inputs
-* *const FScopedSaveGame&* **Save** - The save game to write to disk
+* *FScopedSaveGame&* **Save** - The save game to write to disk
 #### Outputs
 * *bool* **Return Value** - Returns true when succesful or false otherwise
 
@@ -33,7 +33,7 @@ Writes out save to disk.
 #### Description
 The deletes the save slot from disk with given slot name
 #### Inputs
-* *FString&* **Slot** - The slot name to delete
+* *FString* **Slot** - The slot name to delete
 #### Outputs
 * *bool* **Return Value** - Returns true when succesful or false otherwise
 
