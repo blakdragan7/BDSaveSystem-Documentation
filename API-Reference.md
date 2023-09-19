@@ -1,13 +1,13 @@
 ## Start and Load Saves
 ### Start Save to Slot
 #### Description
-Creates in memory or loads to memory a save game for slot name. 
+This will create a save game in memory or load to memory for given slot name. 
 
 #### Inputs
-* *FString* **Slot** - The name of the slot to create a save for
-* *bool* **Attempt Load** - Wether or not to load a save game for given slot if one is found
+* *FString* **Slot** - The name of the slot used to create a save game. 
+* *bool* **Attempt Load** - Whether or not to  attempt to load a save game for specified slot, if one is found. If not, it will be created in memory. 
 #### Outputs
-* *FScopedSaveGane* **OutSave** - The created or loaded save game 
+* *FScopedSaveGame* **OutSave** - The created or loaded save game. 
 
 [[/images/StartSaveToSlot.png|Start Save to Slot Image]]
 ### Load Save from Slot
