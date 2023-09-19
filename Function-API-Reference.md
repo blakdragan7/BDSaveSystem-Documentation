@@ -42,7 +42,7 @@ The deletes the save slot from disk with given slot name
 ## Functions that Write / Get Data
 ### "Write Actor" Blueprint function
 #### Description
-Adds given actor's save data to the save game in memory
+Adds given actors' save data to the save game in memory
 #### Inputs
 * *FScopedSaveGame* **SaveGame** - The save game to write to
 * *AActor* **Actor** - Actor To Write
