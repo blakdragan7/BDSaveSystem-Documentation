@@ -2,7 +2,7 @@
 
 [Function API Reference](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/Function-API-Reference)
 
-[Basic Use](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/Basic-Use)
+[The Basics](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/The-Basics)
 
 [Advanced Use](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/Advanced-Use)
 
