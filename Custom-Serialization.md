@@ -1,7 +1,10 @@
+
 ## The Basics of Custom Loading
+
 It's possible to customize how actors are serialized into the save system. This is done through C++. It is not currently possible to do this through Blueprints as it is a limitation of the built in save system or unreal.
 
 ## C++ Setup
+
 Inside of your actors header file, you need to add the following function override:
 
 ```cpp
