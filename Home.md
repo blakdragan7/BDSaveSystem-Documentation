@@ -4,7 +4,7 @@
 
 [The Basics](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/The-Basics)
 
-[Advanced Use](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/Advanced-Use)
+[Custom Actor Loading](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/Custom-Actor-Loading)
 
 [Exploring The Example Level](https://github.com/blakdragan7/Dynamic-Scene-Component-Save-Load/wiki/Exploring-The-Example-Level)
 
