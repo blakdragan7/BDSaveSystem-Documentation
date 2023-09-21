@@ -1,5 +1,3 @@
-# Exploring The Example Level
-
 ## What is the example level ?
 
 The example level is a blueprint only game that shows how to use the DSC save system. It is a simple game of Tick Tack Toe. The board is dynamically sized based on the ui options the player can choose when they start the level. At any point the player can quite and come back to the game and it will be in the same state as when they left.
