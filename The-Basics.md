@@ -8,6 +8,8 @@ FScopedSaveGame's are backed by a custom USaveGame object that handles all the a
 
 To create a new scope, use `NewScopeLevel` function. This function takes a FScopedSaveGame and a scope. It will return a new FScopedSaveGame that is backed by the same USaveGame object as the parent. This new FScopedSaveGame will have the same slot as the parent, but will have the new scope. This allows for "partitioning" data so that saving and loading data is easier. For example, you can have a scope for the player state, and a scope for the player pawn. This way, you can load the player state and pawn separately without having to manually filter the data.
 
+The default save path is in `{ProjectDir}/Saved/SaveGames/` just like the standard `USaveGame` system that comes with unreal.
+
 ### UDSCSaveSystemModuleBlueprintLibrary
 
 UDSCSaveSystemModuleBlueprintLibrary is a blueprint function library used to expose all of the functions required for FScopedSaveGame to blueprints. It is a static class that can be accessed from any blueprint.
