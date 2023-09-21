@@ -31,6 +31,7 @@ void MyActor::Serialize(FArchive& Ar)
     // handles both saving and loading, so it must be a modifiable. 
     AActor* ChildActor = MyChildActorComponent->GetChildActor();
     Ar << ChildActor;
+}
  ```
 
 If you want to spawn the child actor, you can do the following:
