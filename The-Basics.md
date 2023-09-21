@@ -6,6 +6,8 @@ A FScopedSaveGame is an opaque struct that is used as a reference for a save gam
 
 FScopedSaveGame's are backed by a custom USaveGame object that handles all the actual disk read and writes. So most concepts that apply to the default unreal save game system also apply here.
 
+To create a new scope, use `NewScopeLevel` function. This function takes a FScopedSaveGame and a scope. It will return a new FScopedSaveGame that is backed by the same USaveGame object as the parent. This new FScopedSaveGame will have the same slot as the parent, but will have the new scope. This allows for "partitioning" data so that saving and loading data is easier. For example, you can have a scope for the player state, and a scope for the player pawn. This way, you can load the player state and pawn separately without having to manually filter the data.
+
 ### UDSCSaveSystemModuleBlueprintLibrary
 
 UDSCSaveSystemModuleBlueprintLibrary is a blueprint function library used to expose all of the functions required for FScopedSaveGame to blueprints. It is a static class that can be accessed from any blueprint.
@@ -41,6 +43,10 @@ to get data from a save game, you must use the `LoadActorFromMemory` function. T
 If you want to load and spawn the actors saved then call `LoadActorsFromMemory` instead. It is recommend to have a different scope for actors that you want to also spawn at runtime to avoid loading the wrong actor.
 
 ## Example Usage
+
+### Create a new scope from a save game
+
+[[/images/NewScopeLevelExample.png|New Scope Level Example Image]]
 
 ### Save Actor and Flush to Disk
 
