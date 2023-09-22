@@ -20,11 +20,11 @@ ADSCPlayerController is a provided player controller that contains functions to 
 
 #### UpdateSaveCache
 
-This function takes no arguments and will update the held save cache for the current state of the controller pawn and player state.
+This function takes no arguments and will update the held save cache for the controller pawn and the player state's current state.
 
 #### SaveNow
 
-This function takes one argument and will save the cached state of the controller pawn and player state to disk. The argument is a bool, that if true, will update the stored cache before saving to disk.
+This function will save the current cache to disk. If the argument is true, it will update the cache before saving. 
 
 ### ADSCActorBase (DSCActorBase in blueprints)
 
