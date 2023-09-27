@@ -107,18 +107,3 @@ void MyActor::Serialize(FArchive& Ar)
 ## Important Notes
 
 * You should always call `Super::Serialize(Ar)` before you do any custom serialization. This is because the default implementation of `Serialize` for `AActor` handles some default saving and loading behaviors that need to happen.
-* Never try to save any objects of type TObjectPtr<>, TWeakObjPtr, TSharedPtr etc.. Instead you should get the raw pointer from these objects and save that directly. For example:
-
-```cpp
-void MyActor::Serialize(FArchive& Ar)
-{
-    Super::Serialize(Ar);
-
-    // this will work fine
-    UObject* object = MyObjectPtr.Get();
-    Ar << object;
-
-    // this will cause a crash on load
-    Ar << MyObjectPtr;
-}
-```

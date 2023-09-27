@@ -32,9 +32,9 @@ ADSCActorBase is a convenience class that can be used to automatically save the 
 
 ## Writing Data
 
-to add data to a save game, you must use the `WriteActor` function. This function takes an actor and a FScopedSaveGame. The actor is serialized into a byte array and stored in the save game object. By default, the actors' transform, class and name are stored. If more data is wanted then the property needs to be marked as a "save game" property. This can be done in the advanced menu in blueprints or by using the `SaveGame` specifier in C++. This can be used on any property that is serializable.
+to add data to a save game, you must use the `WriteActor` and `WiteObject` functions. These functions takes an AActor or UObject and a FScopedSaveGame. The actor / object is serialized into a byte array and stored in the save game object. By default, the actors' transform, class and name are stored and the objects name and class are stored. If more data is wanted to be saved, then mark the property as "SaveGame" that you wish to save. This can be done in the advanced menu in blueprints or by using the `SaveGame` specifier in C++. This can be used on any property that is serializable.
 
-After writing all desired actors call `FlushSave` on the FScopedSaveGame to write the save game to disk.
+After writing all desired actors and objects call `FlushSave` on the FScopedSaveGame to write the save game to disk. Until this function is called all data is stored in memory.
 
 ## Getting Data
 
@@ -43,6 +43,8 @@ to get data from a save game, you must use the `LoadActorFromMemory` function. T
 **It is important to load the actors from the save game in the exact order they are written to it. Otherwise, the wrong actor will be loaded and a crash can occur.**
 
 If you want to load and spawn the actors saved then call `LoadActorsFromMemory` instead. It is recommend to have a different scope for actors that you want to also spawn at runtime to avoid loading the wrong actor.
+
+Objects can be loaded in the exact same way as actors with the LoadObjectFromMemory and LoadObjectsFromMemory functions.
 
 ## Example Usage
 
