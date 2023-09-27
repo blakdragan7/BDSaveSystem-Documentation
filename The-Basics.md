@@ -2,17 +2,17 @@
 
 ### FScopedSaveGame (ScopedSaveGame in blueprints)
 
-A FScopedSaveGame is an opaque struct that is used as a reference for a save game instance. It contains a "slot" and a "scope". "slots" are essentially the name of the save file used on disk. "scope" is a string that is used as a sub directory into that file. The combination of the two is used to uniquely identify save game data.
+An FScopedSaveGame is an opaque struct used as a reference for a save game instance. It contains a slot and a scope. Slots are essentially the name of the save file used on disk. Scope, is a string used as a subdirectory into that file.The combination of the two uniquely identify the save game data.
 
-FScopedSaveGame's are backed by a custom USaveGame object that handles all the actual disk read and writes. So most concepts that apply to the default unreal save game system also apply here.
+FScopedSaveGames' are backed by a custom USaveGame object that handles all the actual disk read and writes. So, most concepts that apply to the default unreal save game system also apply here.
 
-To create a new scope, use `NewScopeLevel` function. This function takes a FScopedSaveGame and a scope. It will return a new FScopedSaveGame that is backed by the same USaveGame object as the parent. This new FScopedSaveGame will have the same slot as the parent, but will have the new scope. This allows for "partitioning" data so that saving and loading data is easier. For example, you can have a scope for the player state, and a scope for the player pawn. This way, you can load the player state and pawn separately without having to manually filter the data.
+To create a new scope, use `NewScopeLevel` function. This function takes a FScopedSaveGame and a scope. It will return a new FScopedSaveGame backed by the same USaveGame object as the parent. This new FScopedSaveGame will have the same slot as the parent, but will have the new scope. This concept allows for partitioning data, so saving and loading data is easy. For example, you can have a scope for the player state, and a scope for the player pawn. This way, you can load the player state and pawn separately without manually filter the data.
 
 The default save path is in `{ProjectDir}/Saved/SaveGames/` just like the standard `USaveGame` system that comes with unreal.
 
 ### UDSCSaveSystemModuleBlueprintLibrary
 
-UDSCSaveSystemModuleBlueprintLibrary is a blueprint function library used to expose all of the functions required for FScopedSaveGame to blueprints. It is a static class that can be accessed from any blueprint.
+UDSCSaveSystemModuleBlueprintLibrary is a blueprint function library used to expose all functions required for FScopedSaveGame to blueprints. It is a static class that is accessible from any blueprint.
 
 ### ADSCPlayerController (DSCPlayerController in blueprints)
 
@@ -20,11 +20,11 @@ ADSCPlayerController is a provided player controller that contains functions to 
 
 #### UpdateSaveCache
 
-This function takes no arguments and will update the held save cache in memory for the current state of the controller pawn and player state.
+This function takes no arguments and will update the held save cache for the controller pawn and the player state's current state.
 
 #### SaveNow
 
-This function takes one arguments and will save the cached state of the controller pawn and player state to disk. The arguments is a bool that if true, it will update the stored cache before saving to disk.
+This function will save the current cache to disk. If the argument is true, it will update the cache before saving. 
 
 ### ADSCActorBase (DSCActorBase in blueprints)
 
